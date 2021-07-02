@@ -10,7 +10,7 @@ public class SingleThreadedBigPrimes {
         Long start = System.currentTimeMillis();
         SortedSet<BigInteger> primes = new TreeSet<>();
         while(primes.size() < 20) {
-            BigInteger bigInteger = new BigInteger(2000,new Random());
+            BigInteger bigInteger = new BigInteger(3000,new Random());
             primes.add(bigInteger.nextProbablePrime());
         }
         Long end = System.currentTimeMillis();

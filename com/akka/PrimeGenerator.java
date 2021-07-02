@@ -10,7 +10,7 @@ public class PrimeGenerator implements Runnable{
     }
     @Override
     public void run() {
-        BigInteger bigInteger = new BigInteger(2000,new Random());
+        BigInteger bigInteger = new BigInteger(3000,new Random());
         results.getPrimes().add(bigInteger.nextProbablePrime());
     }
 }
